@@ -6,19 +6,15 @@
 	<div>
 	    <h21><a href="">Blog da Arcanjo</a></h1>
 	</div>
+      
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.ublished_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
 
-	<div>
-	    <p>publicado: 12.06.2018, 18:55</p>
-	    <h2><a href="">Meu primeiro post</a></h2>
-	    <p>Testando um primeiro post em html, sem mexer muito nas configurações de campo e de letra, basicamente 
-montando uma estrutura para o blog. Espero que saia tudo do jeito que deveria.</p>
-	</div>
 
-	<div>
-	    <p>publicado: 12:06.2018, 18:57</p>
-	    <h2><a href="">Meu segundo post</a></h2>
-	    <p>Agora que me dei conta que tem quase quatro anos que esse modelo de blog do tutorial foi publicado. 
-Ola's blog foi publicado em 14.06.2014, e cá estou eu, publicando em 12.06.2018! Aniversário da Mamushka, ainda!</p>
-	</div>
     </body>
 </html>
